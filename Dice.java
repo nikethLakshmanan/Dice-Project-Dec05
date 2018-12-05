@@ -11,4 +11,10 @@ public class Dice{
 		int random2 = (int)(Math.random()*6)+1;
 		value = random2;
 	}
+	public int getNumSides(){
+		return numSides;
+	}
+	public int getValue(){
+		return value;
+	}
 }
