@@ -17,4 +17,10 @@ public class Dice{
 	public int getValue(){
 		return value;
 	}
+	public void roll(){
+		int randomRoll = (int)(Math.random()*numSides)+1;
+	}
+	public String toString(){
+		return "Number of Sides: " + numSides + ", Value: " + value;
+	}
 }
