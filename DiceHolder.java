@@ -10,12 +10,13 @@ public class DiceHolder{
 
 	}
 
-	public int addDie(){
+	public int addDie(Dice die){
 		if(holder.size()==6)
 			return -1;
-		else
+		else{
+			holder.add(die);
 			return 1;
-
+		}
 	}
 
 	public void shake(){
