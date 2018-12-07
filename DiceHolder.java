@@ -10,6 +10,11 @@ public class DiceHolder{
 
 	}
 
+	public int getSize(){
+		int size = 0;
+		return holder.size();
+	}
+
 	public int addDie(Dice die){
 		if(holder.size()==6)
 			return -1;
@@ -21,9 +26,13 @@ public class DiceHolder{
 
 	public void shake(){
 
-		for(int i=0; i<6; i++){
+		for(int i=0; i<holder.size(); i++){
+
+			//holder.set((holder.get(i)).roll(), i);
+
 			holder.get(i).roll();
-			holder.set(i, holder.get(i));
+
+
 		}
 
 	}
