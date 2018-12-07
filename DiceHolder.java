@@ -29,7 +29,15 @@ public class DiceHolder{
 	}
 
 
-
+	public String toString(){
+		String s= " ";
+		for(int i=0; i<holder.size(); i++){
+			Dice dice = holder.get(i);
+			s += dice;
+			s += "\n";
+		}
+		return s;
+	}
 
 
 
