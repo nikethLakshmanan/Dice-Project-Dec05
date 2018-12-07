@@ -24,13 +24,6 @@ public class DiceRunner{
 			}
 		}
 
-		Dice dieNew = new Dice(8);
-
-		DiceHolder d = new DiceHolder();
-		d.addDie(dieNew);
-
-		System.out.println("\n\n\n\n\n"+d);
-
 		//Test 2
 
 		System.out.println("Test 2");
