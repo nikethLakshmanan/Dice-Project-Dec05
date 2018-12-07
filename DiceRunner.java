@@ -6,8 +6,8 @@ public class DiceRunner{
 		int count  = 1;
 		boolean counter = false;
 		while(counter==false){
-			Dice die = new Dice();
-			Dice die2 = new Dice();
+			Dice die = new Dice(111);
+			Dice die2 = new Dice(111);
 			System.out.println("Roll Number " + count);
 			System.out.println(die);
 			System.out.println(die2);
