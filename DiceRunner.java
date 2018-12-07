@@ -2,13 +2,6 @@ public class DiceRunner{
 	public static void main(String[]args){
 		//test one
 
-		Dice dieNew = new Dice(8);
-
-		DiceHolder.addDie(dieNew);
-		DiceHolder d = new DiceHolder();
-		System.out.println("\n\n\n\n\n"+d);
-
-
 		int numSnakeEyes = 1;
 		int count  = 1;
 		boolean counter = false;
@@ -30,6 +23,26 @@ public class DiceRunner{
 				count ++;
 			}
 		}
+
+		Dice dieNew = new Dice(8);
+
+		DiceHolder d = new DiceHolder();
+		d.addDie(dieNew);
+
+		System.out.println("\n\n\n\n\n"+d);
+
+		//Test 2
+
+		System.out.println("Test 2");
+
+		DiceHolder t2 = new DiceHolder();
+		for(int i=0; i<t2.getSize(); i++){
+			int j = (int)((Math.random()*17)+4);
+			t2.addDie(new Dice(j));
+			System.out.println(t2);
+		}
+		t2.shake();
+		System.out.println("After shaking\n" +t2);
 
 	}
 }
